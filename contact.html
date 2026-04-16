@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+    
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="products.html">Products</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        
+        <section>
+            <h2>Get in Touch</h2>
+
+            <form>
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" placeholder="Enter your name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br><br>
+
+                    <label for="quantity">Order Quantity:</label><br>
+                    <input type="number" id="quantity" name="quantity" min="1" max="100" required><br><br>
+
+                    <label for="customerId">Customer ID:</label><br>
+                    <input type="text" id="customerId" name="customerId" value="AUTO123" readonly><br><br>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Inquiry Details</legend>
+
+                    <p>Inquiry Type:</p>
+                    <input type="radio" id="sales" name="inquiry" value="sales" required>
+                    <label for="sales">Sales</label><br>
+
+                    <input type="radio" id="support" name="inquiry" value="support">
+                    <label for="support">Support</label><br><br>
+
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Subscribe to Newsletter</label><br><br>
+
+                    <label for="contactMethod">Preferred Contact Method:</label><br>
+                    <select id="contactMethod" name="contactMethod" required>
+                        <option value="">--Select--</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here..." required></textarea><br><br>
+
+                </fieldset>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </form>
+        </section>
+
+        <!-- Image Map Section -->
+        <section>
+            <h2>Our Locations</h2>
+
+            <img src="rwanda-map.jpg" alt="Map of Rwanda" usemap="#rwandaMap" width="400">
+
+            <map name="rwandaMap">
+                <!-- Coordinates are placeholders -->
+                <area shape="circle" coords="200,250,20" alt="Kigali" href="#">
+                <area shape="circle" coords="150,100,20" alt="Musanze" href="#">
+                <area shape="circle" coords="220,350,20" alt="Huye" href="#">
+            </map>
+        </section>
+
+        <!-- Audio Section -->
+        <section>
+            <h2>Welcome Message</h2>
+
+            <audio controls>
+                <source src="welcome.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My E-Commerce Website</p>
+    </footer>
+
+</body>
+</html>
